@@ -1,0 +1,39 @@
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.bg1 {
+    animation: ltr 5s infinite;
+}
+.bg2 {
+    animation: utd 5s infinite;
+}
+.bg3 {
+    animation: dtu 5s infinite;
+}
+.bg4 {
+    animation: ltr 5s infinite;
+}
+.bg5 {
+    animation: ltr 5s infinite;
+}
+.bg6 {
+    animation: ltr 5s infinite;
+}
+
+@keyframes ltr {
+    from {background: red; width: 0%; height: 100%;}
+    to {background: red; width: 100%; height: 100%;}
+}
+
+@keyframes utd {
+    from {background: red; width: 100%; height: 0%; position: left top; }
+    to {background: red; width: 100%; height: 100%;}
+}
+
+@keyframes dtu {
+    from {background: red; width: 100%; height: 0%;}
+    to {background: red; width: 100%; height: 100%;}
+}
