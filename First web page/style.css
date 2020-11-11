@@ -4,7 +4,6 @@ body {
 
 td {
     border: 5px solid blue;
-    width: 70px;
     height: 50px;
 }
 
@@ -16,8 +15,46 @@ img:hover {
     border: 1px solid black;
 }
 
-div {
-    width: 100%;
+.red {
+    width: 0%;
     height: 100%;
     background: red;
+}
+
+.toLeft {
+    position: relative;
+}
+
+.toLeft:hover div {
+    width: 100%;
+    animation: widthEnlaragment 5s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes widthEnlaragment {
+    0% { 
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#field-email {
+    background: #2a3eb3;
+    color: #da1010;
+    padding: 10px;
+    border: 4px double;
+    border-radius: 10px;
+}
+
+#field-email:focus {
+    outline: none;
+    background:#4256c4;
+}
+
+#field-email::placeholder {
+    color: #da1010;
 }
